@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  # Unique key of the Service instance
+  name: ion-service
+   labels:
+    app: ion
+spec:
+  selector:
+    app: ion
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 32180
