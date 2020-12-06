@@ -16,6 +16,6 @@ spec:
      spec:
        containers:
        - name: ion
-         image: sirishak9/rion:v1.o
+         image: sirishak9/rion:v1.0
          port:
          - containerPort: 80
